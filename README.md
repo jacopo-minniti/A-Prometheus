@@ -20,7 +20,7 @@ These two databases are used to obtain real-time data about fire positions, prop
 ### 2. Proximity and danger levels are computed. 
 Each node of the graph database representing a street light has the properties of latitude and longitude. 
 The proximity to the fire is computed using the coordinates of the fire and of the street lights. 
-It is computed the _danger level_ using different atmospheric conditions and the proximity property previously computed. 
+It is then computed the _danger level_ using different atmospheric conditions and the proximity property previously computed. 
 The danger level has two uses. 
 ### 3. Heat Map
 A heat map of the region is plotted. 
@@ -29,7 +29,7 @@ It is something for the community. Actually, you can think of the heat map as a 
 ### 4. Light Wave 
 The danger level is transformed in a frequency for street lights. 
 A light wave is directed to people near or on the streets to the safest zones. 
-The light wave effect is given simply by the lights turning on and off syncrosly (again, the frequency) 
+The light wave effect is given simply by the lights turning on and off synchronously (again, the frequency) 
 The path is chosen through an algorithm that minimizes the total _danger level_ of the path.   
 
 ## Mesh networks 
@@ -44,17 +44,28 @@ This microcomputer, situated in the streetlight system, is responsible for compu
 It achieves this by leveraging cloud computing resources for its processing needs.
 
 ## Security
-Our priority as a team is not only for physical secruity, but for cyber as well. 
-Considering also previous istances of apps whcih used mesh networks, some could question the security.
+Our priority as a team is not only for physical security, but for cyber as well. 
+Considering previous instances of apps that used mesh networks, some could question the security.
 There are three points for which our integrated system remains secure:
   1. No internet connection, thus potential intruders need to access the mesh networks.
   2. No personal information. No data from users is needed for obvious reasons. Thus, no data can be stolen.
   3. Our mesh network is isolated. Even if someone accessed it, they would have no space to access other devices with more useful information.
-  4. To actually work on the chip, someone should open and break the street light (which are also positioned quite high) 
+  4. To actually work on the chip, someone should open and break the street lights (which are also positioned quite high) 
 
 ## Future implementations 
 There are many ways through which we will be able to improve on the project. 
 To compute the _danger level_ it is possible to use graph machine-learning models that take advantage of the graph database. 
 The algo library from neo4j offers such models. 
-A future improvement will be the to encrypt the code to leave even less space for intruders.
+A future improvement will be to encrypt the code to leave even less space for intruders.
+
+# The developers behind the project.
+We are Minerva University Freshmen, based in San Francisco. 
+This project is the result of two days of intense work during the **Mountain View NASA Space Apps Challenge 2023**. 
+From left to right: 
+(Top) **Marina, Emilia, Rere**
+(Bottom) **Kaan, Jacopo, Amina**
+
+![space apps team](https://github.com/jacopo-minniti/A-Prometheus/assets/115539886/db2bda04-1f3a-49c3-b237-2a574a72bd3b)
+
+
 
